@@ -1,0 +1,31 @@
+// Tìm số nguyên tố trong một khoảng:
+
+<?php
+function kiemTraSoNguyenTo($n) {
+    if ($n < 2) {
+        return false;
+    }
+    for ($i = 2; $i <= sqrt($n); $i++) {
+        if ($n % $i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function timSoNguyenToTrongKhoang($start, $end) {
+    echo "Các số nguyên tố trong khoảng từ $start đến $end là: ";
+    for ($i = $start; $i <= $end; $i++) {
+        if (kiemTraSoNguyenTo($i)) {
+            echo $i . " ";
+        }
+    }
+}
+
+// Khoảng cần kiểm tra
+$start = 10;
+$end = 50;
+
+// Tìm số nguyên tố trong khoảng
+timSoNguyenToTrongKhoang($start, $end);
+?>

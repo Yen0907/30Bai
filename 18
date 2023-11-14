@@ -1,0 +1,12 @@
+<?php
+// Mảng cần kiểm tra
+$array = array(1, 2, 3, 4, 2, 5, 2);
+
+// Phần tử cần đếm
+$elementToCount = 2;
+
+// Đếm số lần xuất hiện của phần tử trong mảng
+$occurrences = array_count_values($array);
+
+echo "Số lần xuất hiện của $elementToCount trong mảng là: " . $occurrences[$elementToCount];
+?>

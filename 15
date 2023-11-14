@@ -1,0 +1,9 @@
+<?php
+// Chuỗi cần đảo ngược
+$string = "Hello, World!";
+
+// Đảo ngược chuỗi
+$reversedString = strrev($string);
+
+echo "Chuỗi sau khi đảo ngược là: $reversedString";
+?>

@@ -1,0 +1,17 @@
+//Viết chương trình PHP để tính giai thừa của một số nguyên dương.
+<?php
+function tinhGiaiThua($n) {
+    $giaiThua = 1;
+    for ($i = 1; $i <= $n; $i++) {
+        $giaiThua *= $i;
+    }
+    return $giaiThua;
+}
+
+// Số cần tính giai thừa
+$soCanTinhGiaiThua = 5;
+
+// Tính giai thừa
+$ketQua = tinhGiaiThua($soCanTinhGiaiThua);
+echo "Giai thừa của $soCanTinhGiaiThua là: $ketQua";
+?>

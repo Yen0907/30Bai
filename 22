@@ -1,0 +1,25 @@
+<?php
+function timUocSoChungLonNhat($a, $b) {
+    while ($b != 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+    return $a;
+}
+
+function timBoiSoChungNhoNhat($a, $b) {
+    return abs($a * $b) / timUocSoChungLonNhat($a, $b);
+}
+
+// Hai số nguyên dương
+$num1 = 12;
+$num2 = 18;
+
+// Tìm ước số chung lớn nhất và bội số chung nhỏ nhất
+$uocChungLonNhat = timUocSoChungLonNhat($num1, $num2);
+$boiSoChungNhoNhat = timBoiSoChungNhoNhat($num1, $num2);
+
+echo "Ước số chung lớn nhất là: $uocChungLonNhat<br>";
+echo "Bội số chung nhỏ nhất là: $boiSoChungNhoNhat";
+?>

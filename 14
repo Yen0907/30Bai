@@ -1,0 +1,12 @@
+<?php
+// Mảng cần tìm vị trí
+$array = array(1, 2, 3, 4, 5);
+
+// Phần tử cần tìm vị trí
+$elementToFind = 3;
+
+// Tìm vị trí của phần tử trong mảng
+$position = array_search($elementToFind, $array);
+
+echo "Vị trí của $elementToFind trong mảng là: $position";
+?>

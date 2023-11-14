@@ -1,0 +1,14 @@
+<?php
+// Mảng cần kiểm tra
+$array = array(-5, 2, -8, 10, 3);
+
+// Lọc các số âm
+$negativeNumbers = array_filter($array, function ($number) {
+    return $number < 0;
+});
+
+// Tìm số âm lớn nhất
+$largestNegative = max($negativeNumbers);
+
+echo "Số âm lớn nhất trong mảng là: $largestNegative";
+?>

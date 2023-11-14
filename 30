@@ -1,0 +1,17 @@
+<?php
+function kiemTraChuoiCon($chuoiCon, $chuoiGoc) {
+    return strpos($chuoiGoc, $chuoiCon) !== false;
+}
+
+// Chuỗi gốc
+$chuoiGoc = "Hello, World!";
+
+// Chuỗi con cần kiểm tra
+$chuoiCon = "World";
+
+if (kiemTraChuoiCon($chuoiCon, $chuoiGoc)) {
+    echo "\"$chuoiCon\" là chuỗi con của \"$chuoiGoc\".";
+} else {
+    echo "\"$chuoiCon\" không phải là chuỗi con của \"$chuoiGoc\".";
+}
+?>

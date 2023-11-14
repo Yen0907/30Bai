@@ -1,0 +1,20 @@
+<?php
+// Mảng ban đầu
+$array = array(1, 2, 3, 4, 5);
+
+// Phần tử cần thêm vào đầu mảng
+$elementToAddAtBeginning = 0;
+
+// Thêm phần tử vào đầu mảng
+array_unshift($array, $elementToAddAtBeginning);
+
+echo "Mảng sau khi thêm phần tử vào đầu là: " . implode(", ", $array);
+
+// Phần tử cần thêm vào cuối mảng
+$elementToAddAtEnd = 6;
+
+// Thêm phần tử vào cuối mảng
+array_push($array, $elementToAddAtEnd);
+
+echo "<br>Mảng sau khi thêm phần tử vào cuối là: " . implode(", ", $array);
+?>

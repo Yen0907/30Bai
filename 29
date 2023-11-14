@@ -1,0 +1,17 @@
+<?php
+function kiemTraChinhPhuong($n) {
+    $sqrt = sqrt($n);
+    return ($sqrt * $sqrt == $n);
+}
+
+// Khoảng cần kiểm tra
+$start = 1;
+$end = 20;
+
+echo "Các số chính phương trong khoảng từ $start đến $end là: ";
+for ($i = $start; $i <= $end; $i++) {
+    if (kiemTraChinhPhuong($i)) {
+        echo $i . " ";
+    }
+}
+?>

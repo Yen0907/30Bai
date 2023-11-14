@@ -1,0 +1,9 @@
+<?php
+// Mảng cần đếm số lượng phần tử
+$array = array(1, 2, 3, 4, 5);
+
+// Đếm số lượng phần tử
+$numberOfElements = count($array);
+
+echo "Số lượng phần tử trong mảng là: $numberOfElements";
+?>

@@ -1,0 +1,14 @@
+<?php
+function timSoLonThuHai($array) {
+    rsort($array);
+    return $array[1];
+}
+
+// Mảng cần kiểm tra
+$array = array(5, 2, 8, 10, 3);
+
+// Tìm số lớn thứ hai
+$secondLargest = timSoLonThuHai($array);
+
+echo "Số lớn thứ hai trong mảng là: $secondLargest";
+?>

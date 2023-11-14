@@ -1,0 +1,16 @@
+<?php
+function kiemTraPalindrome($str) {
+    $str = strtolower($str);
+    $str = str_replace(' ', '', $str);
+    return $str == strrev($str);
+}
+
+// Chuỗi cần kiểm tra
+$stringToCheck = "A man a plan a canal Panama";
+
+if (kiemTraPalindrome($stringToCheck)) {
+    echo "$stringToCheck là chuỗi Palindrome.";
+} else {
+    echo "$stringToCheck không phải là chuỗi Palindrome.";
+}
+?>

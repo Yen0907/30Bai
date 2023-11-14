@@ -1,0 +1,9 @@
+<?php
+// Mảng cần sắp xếp
+$array = array(5, 2, 8, 10, 3);
+
+// Sắp xếp mảng theo thứ tự giảm dần
+rsort($array);
+
+echo "Mảng sau khi sắp xếp giảm dần: " . implode(", ", $array);
+?>

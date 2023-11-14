@@ -1,0 +1,17 @@
+<?php
+function tinhTongSoLe($n) {
+    $sum = 0;
+    for ($i = 1; $i <= $n; $i += 2) {
+        $sum += $i;
+    }
+    return $sum;
+}
+
+// Giá trị của n
+$n = 10;
+
+// Tính tổng các số lẻ từ 1 đến n
+$tongSoLe = tinhTongSoLe($n);
+
+echo "Tổng các số lẻ từ 1 đến $n là: $tongSoLe";
+?>

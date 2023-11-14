@@ -1,0 +1,22 @@
+// Chèn phần tử vào mảng ở vị trí bất kỳ:
+
+<?php
+function chenPhanTu($array, $element, $position) {
+    array_splice($array, $position, 0, $element);
+    return $array;
+}
+
+// Mảng ban đầu
+$originalArray = array(1, 2, 3, 4, 5);
+
+// Phần tử cần chèn
+$elementToInsert = 10;
+
+// Vị trí cần chèn
+$positionToInsert = 2;
+
+// Chèn phần tử vào mảng
+$newArray = chenPhanTu($originalArray, $elementToInsert, $positionToInsert);
+
+echo "Mảng sau khi chèn phần tử là: " . implode(", ", $newArray);
+?>

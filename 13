@@ -1,0 +1,11 @@
+// Loại bỏ phần tử trùng lặp trong mảng:
+
+<?php
+// Mảng cần loại bỏ phần tử trùng lặp
+$array = array(1, 2, 2, 3, 4, 4, 5);
+
+// Loại bỏ phần tử trùng lặp
+$uniqueArray = array_unique($array);
+
+echo "Mảng sau khi loại bỏ phần tử trùng lặp là: " . implode(", ", $uniqueArray);
+?>
